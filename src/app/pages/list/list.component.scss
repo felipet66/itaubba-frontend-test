@@ -2,26 +2,38 @@
   &__container {
     margin: 0 auto;
     padding: 16px;
+    max-width: 1200px;
   }
 
   &__header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 16px;
     margin-top: 32px;
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__search {
     display: flex;
     align-items: center;
-    margin-left: 16px;
+    margin-top: 16px;
+
+    @media (min-width: 600px) {
+      margin-top: 0;
+      margin-left: 16px;
+    }
   }
 
   &__title {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   &__subtitle {
@@ -71,7 +83,7 @@
     justify-content: center;
   }
 
-  .mat-table {
-    overflow: auto;
+  &__table-container {
+    overflow-x: auto;
   }
 }
