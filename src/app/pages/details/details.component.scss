@@ -1,0 +1,43 @@
+.details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
+  &__grid-item {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #555;
+  }
+
+  &__actions {
+    > button {
+      margin-right: 16px;
+    }
+
+    button:nth-child(2) {
+      background-color: orange;
+      width: 125px;
+    }
+  }
+
+  h3 {
+    margin-top: 32px;
+  }
+}

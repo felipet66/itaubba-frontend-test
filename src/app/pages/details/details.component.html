@@ -1,0 +1,74 @@
+<div class="details">
+  <div>
+    <h1 class="details__title">Polo: {{ businessDetails.name }}</h1>
+    <h2 class="details__subtitle">{{ businessDetails.business }}</h2>
+  </div>
+
+  <h3>Detalhes do Endereco</h3>
+
+  <form [formGroup]="businessForm" (ngSubmit)="onSubmit()">
+    <div class="details__grid">
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>CEP</mat-label>
+        <input matInput formControlName="cep" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Rua</mat-label>
+        <input matInput formControlName="street" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Bairro</mat-label>
+        <input matInput formControlName="neighborhood" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Cidade</mat-label>
+        <input matInput formControlName="city" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Estado</mat-label>
+        <input matInput formControlName="state" />
+      </mat-form-field>
+    </div>
+
+    <h3>Detalhes da Empresa</h3>
+
+    <div class="details__grid">
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Empresa</mat-label>
+        <input matInput formControlName="business" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Valuation</mat-label>
+        <input matInput formControlName="valuation" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>CNPJ</mat-label>
+        <input matInput formControlName="cnpj" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="details__grid-item">
+        <mat-label>Ativo</mat-label>
+        <mat-select formControlName="active">
+          <mat-option [value]="true">Sim</mat-option>
+          <mat-option [value]="false">Não</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="details__actions">
+      <button mat-raised-button color="default" type="button" (click)="goBack()">Voltar</button>
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <div class="navbar__container">
+    <div class="navbar__logo">
+      <img src="https://banklineplus.itau.com.br/vsnet/solutions/W8BK/LogoItauBBA.gif" alt="Logo Itaú" class="navbar__logo-img">
+    </div>
+    <div class="navbar__avatar">
+      <button mat-icon-button (click)="toggleLanguage()">
+        <h2>{{textLanguage}}</h2>
+      </button>
+      <mat-card class="navbar__avatar-card">
+        <mat-card-header>
+          <div mat-card-avatar class="navbar__avatar-image"></div>
+          <mat-card-subtitle class="navbar__avatar-title">Felipe</mat-card-subtitle>
+          <mat-card-subtitle class="navbar__avatar-subtitle">Diretor Itau BBA</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,15 @@
+{
+  "app": {
+    "valuation": "Valuation",
+    "polosItau": "Polos Itau",
+    "subtitle": "Confira abaixo alguns dos principais",
+    "filterByName": "Filtrar por nome",
+    "toggleLanguage": "Mudar Idioma",
+    "confirmDeleteTitle": "Confirmar Exclusão",
+    "confirmDeleteText": "Tem certeza de que deseja excluir o registro \"{{name}}\"?",
+    "confirmDeleteYes": "Sim, exclua!",
+    "confirmDeleteNo": "Não, manter",
+    "deleteSuccessTitle": "Excluído!",
+    "deleteSuccessText": "O registro \"{{name}}\" foi excluído."
+  }
+}

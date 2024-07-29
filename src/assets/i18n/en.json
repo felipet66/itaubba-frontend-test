@@ -1,0 +1,15 @@
+{
+  "app": {
+    "valuation": "Valuation",
+    "polosItau": "Polos Itau",
+    "subtitle": "Check out some of the main ones below",
+    "filterByName": "Filter by name",
+    "toggleLanguage": "Toggle Language",
+    "confirmDeleteTitle": "Confirm Delete",
+    "confirmDeleteText": "Are you sure you want to delete the record \"{{name}}\"?",
+    "confirmDeleteYes": "Yes, delete it!",
+    "confirmDeleteNo": "No, keep it",
+    "deleteSuccessTitle": "Deleted!",
+    "deleteSuccessText": "The record \"{{name}}\" has been deleted."
+  }
+}
