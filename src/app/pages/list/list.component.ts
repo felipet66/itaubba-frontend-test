@@ -106,7 +106,7 @@ export class ListComponent implements OnInit {
       cancelButtonText: translate.instant('app.confirmDeleteNo')
     }).then((result) => {
       if (result.isConfirmed) {
-        this.businessService.deleteBusiness(element.id).subscribe(() => {
+        this.businessService.deleteBusiness().subscribe(() => {
           Swal.fire(
             translate.instant('app.deleteSuccessTitle'),
             translate.instant('app.deleteSuccessText', { name: element.name }),

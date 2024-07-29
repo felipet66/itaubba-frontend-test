@@ -3,12 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of, map } from 'rxjs';
 
 import IBusiness from '../../models/business/business.model';
+import enviroments from '../../../../enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BusinessService {
-  private apiUrl = 'https://antlia-mockapi.azurewebsites.net/api/v1/itau_teste';
+  private apiUrl = enviroments.apiUrl;
   private businesses: IBusiness[] = [];
 
   constructor(private http: HttpClient) {}

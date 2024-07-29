@@ -12,8 +12,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "ng lint",
-      "git add"
+      "ng lint --fix"
     ]
   },
   "private": true,
