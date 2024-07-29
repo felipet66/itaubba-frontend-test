@@ -14,7 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule, MatCardModule]
 })
 export class NavbarComponent {
-  textLanguage = "en";
+  textLanguage = "pt";
   constructor(private translate: TranslateService) {}
 
   toggleLanguage() {
